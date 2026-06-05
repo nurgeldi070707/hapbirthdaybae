@@ -57,7 +57,7 @@ function createReasonCard(reason) {
     
     const gifOverlay = document.createElement('div');
     gifOverlay.className = 'gif-overlay';
-    gifOverlay.innerHTML = `<img src="${reason.gif}" alt="Friendship Memory">`;
+    gifOverlay.innerHTML = `<img src="${reason.gif}" alt="Memory">`;
     
     card.appendChild(text);
     card.appendChild(gifOverlay);
