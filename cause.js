@@ -9,7 +9,7 @@ const reasons = [
   {
     text: "我们的寿司之夜总是令人难忘！我喜欢和你一起尝试新事物，在桌前对坐，分享彼此的世界。🍣✨",
     emoji: "🍣",
-    gif: "sushinight.jpg.jpg"
+    gif: "sushinight.jpg"
   },
   {
     text: "When we hold each other's hands, I feel an incredible sense of safety. It feels like I can conquer the whole world as long as I'm holding your hand. 🤝💖",
@@ -38,7 +38,6 @@ const reasons = [
   }
 ];
     
-];
 
 // State management
 let currentReasonIndex = 0;
