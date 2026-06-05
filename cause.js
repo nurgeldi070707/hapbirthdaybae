@@ -1,25 +1,43 @@
  // Reasons database
- const reasons = [
-    { 
-        text: "你真是个善良又美好的人，能和你建立如此深厚的友谊，我感到非常幸运。 💖", 
-        emoji: "🌟",
-        gif: "gif1.gif"
-    },
-    { 
-        text: "愿你的生活充满爱、欢笑和无尽的喜悦。🌸 ", 
-        emoji: "💗",
-        gif: "gif2.gif"
-    },
-    { 
-        text: "祝你成功、幸福，以及你应得的一切。 ✨ ", 
-        emoji: "💕",
-        gif: "gif1.gif"
-    },
-    { 
-        text: "要知道你有多棒——总是把正能量、善良、爱和快乐传递给身边的人。祝你未来一年幸福快乐！🥳 🥳 ", 
-        emoji: "🌟",
-        gif: "gif2.gif"
-    }
+ // Reasons database
+const reasons = [
+  {
+    text: "Whenever I look into those beautiful eyes of yours, everything else just fades away. You have the most captivating gaze in the world. 👀❤️",
+    emoji: "👀",
+    gif: "beautfleyes.jpg"
+  },
+  {
+    text: "我们的寿司之夜总是令人难忘！我喜欢和你一起尝试新事物，在桌前对坐，分享彼此的世界。🍣✨",
+    emoji: "🍣",
+    gif: "sushinight.jpg.jpg"
+  },
+  {
+    text: "When we hold each other's hands, I feel an incredible sense of safety. It feels like I can conquer the whole world as long as I'm holding your hand. 🤝💖",
+    emoji: "🤝",
+    gif: "holdhands.jpg"
+  },
+  {
+    text: "和你一起在奇什米吉乌公园并肩散步，听着你的声音，是我一生中最平静美好的时光。🌳✨",
+    emoji: "🌳",
+    gif: "cesmegiu.jpg"
+  },
+  {
+    text: "Your beautiful smile makes everything around brighter, just like these lovely flowers. You are the prettiest bloom in my life. 🌸",
+    emoji: "🌸",
+    gif: "flowerss.jpg"
+  },
+  {
+    text: "每当你看着我时，那害羞又可爱的样子，真的让我着迷。你总是能让我心动如初！🥰",
+    emoji: "🥰",
+    gif: "shy.jpg"
+  },
+  {
+    text: "Every single moment with you feels like we are living in our own perfect little world. We are the best team ever! 🎨💕",
+    emoji: "🎨",
+    gif: "stickerai.jpg"
+  }
+];
+    
 ];
 
 // State management
