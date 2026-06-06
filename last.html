@@ -54,30 +54,6 @@
             z-index: 1;
         }
 
-        .sparkle {
-            position: absolute;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background-color: white;
-            animation: twinkle var(--duration, 4s) ease-in-out infinite;
-            opacity: 0;
-        }
-
-        @keyframes twinkle {
-
-            0%,
-            100% {
-                opacity: 0;
-                transform: scale(0.5);
-            }
-
-            50% {
-                opacity: 0.8;
-                transform: scale(1);
-            }
-        }
-
         /* Generate 50 sparkles with different positions and animations */
         .magic-sparkles::before,
         .magic-sparkles::after {
@@ -157,7 +133,7 @@
             animation: fadeIn 2s ease 0.5s both;
         }
 
-        /* Enhanced Memory Cards */
+        /* Enhanced Memory Cards - Grid Düzeni Sabitlendi */
         .memory-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -177,6 +153,8 @@
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         .memory-card:hover {
@@ -246,12 +224,9 @@
         }
 
         @keyframes heartbeat {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: scale(1);
             }
-
             50% {
                 transform: scale(1.1);
             }
@@ -285,12 +260,9 @@
         }
 
         @keyframes float {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: translateY(0);
             }
-
             50% {
                 transform: translateY(-10px);
             }
@@ -302,7 +274,6 @@
                 opacity: 0;
                 transform: scale(0.8);
             }
-
             100% {
                 opacity: 1;
                 transform: scale(1);
@@ -313,19 +284,9 @@
             0% {
                 opacity: 0;
             }
-
             100% {
                 opacity: 1;
             }
-        }
-
-        /* Generate Hearts */
-        .js-generate-hearts {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 2;
         }
 
         /* Custom Scrollbar */
@@ -362,7 +323,6 @@
 <body>
     <div class="magic-sparkles"></div>
     <div class="floating-hearts">
-        <!-- Hearts will be generated via CSS -->
         <div class="heart" style="--float-duration: 6s; --delay: 0s; --translate-x: 20px;">💝</div>
         <div class="heart" style="--float-duration: 8s; --delay: 1s; --translate-x: -30px;">💖</div>
         <div class="heart" style="--float-duration: 7s; --delay: 2s; --translate-x: 40px;">💗</div>
@@ -379,46 +339,50 @@
         <div class="memory-card">
             <img src="./beautfleyes.jpg" alt="First Date" class="memory-img">
             <div class="memory-date">Your Eyes Says It All</div>
-            <div class="memory-caption">You’re truly one of the sweetest girls I know, and I feel lucky to have an angel
-                like you.❤️</div>
+            <div class="memory-caption">You’re truly one of the sweetest girls I know, and I feel lucky to have an angel like you.❤️</div>
         </div>
+
         <div class="memory-card">
             <img src="./cesmegiu.jpg" alt="My Queen" class="memory-img">
             <div class="memory-date">Your favourite park Vibes</div>
-            <div class="memory-caption">May our journey ahead be filled with happiness, success, and endless
-                smiles.😊💕</div>
+            <div class="memory-caption">May our journey ahead be filled with happiness, success, and endless smiles.😊💕</div>
         </div>
+
         <div class="memory-card">
             <img src="./flowerss.jpg" alt="Beautiful as flowers " class="memory-img">
             <div class="memory-date">Pretty Soul</div>
             <div class="memory-caption">Even the most beuatiful flowers in the world cant compete with ur beauty.🌸💖</div>
         </div>
-<div class="memory-card">
-    <img src="./holdhands.jpg" alt="Every Second With You" class="memory-img">
-    <div class="memory-date">Pretty Soul</div>
-    <div class="memory-caption">Holding your hands is my favourite to do . i never want to let go.🌸❤️</div>
-</div>
-<div class="memory-card">
-    <img src="./shy.jpg" alt="Shy Girl" class="memory-img">
-    <div class="memory-date">Pretty Soul</div>
-    <div class="memory-caption"> Even the way you cover your face is romantic.🌸❤️</div>
-</div>
-<div class="memory-card">
-    <img src="./stickerai.jpg" alt="Our Cute Side" class="memory-img">
-    <div class="memory-date">Pretty Soul</div>
-    <div class="memory-caption">Every little joke,vevery swett sticker,and every silly conversation with you makes my day a hundred times better.🌸❤️</div>
-</div>
-<div class="memory-card">
-    <img src="./sushinight.jpg" alt="Together Vibes" class="memory-img">
-    <div class="memory-date">Pretty Soul</div>
-    <div class="memory-caption">我愿意陪你吃毒药。但我不会撒谎，我真的很喜欢那寿司。.🌸❤️</div>
 
- 
+        <div class="memory-card">
+            <img src="./holdhands.jpg" alt="Every Second With You" class="memory-img">
+            <div class="memory-date">Pretty Soul</div>
+            <div class="memory-caption">Holding your hands is my favourite to do . i never want to let go.🌸❤️</div>
+        </div>
+
+        <div class="memory-card">
+            <img src="./shy.jpg" alt="Shy Girl" class="memory-img">
+            <div class="memory-date">Pretty Soul</div>
+            <div class="memory-caption">Even the way you cover your face is romantic.🌸❤️</div>
+        </div>
+
+        <div class="memory-card">
+            <img src="./stickerai.jpg" alt="Our Cute Side" class="memory-img">
+            <div class="memory-date">Pretty Soul</div>
+            <div class="memory-caption">Every little joke, every sweet sticker, and every silly conversation with you makes my day a hundred times better.🌸❤️</div>
+        </div>
+
+        <div class="memory-card">
+            <img src="./sushinight.jpg" alt="Together Vibes" class="memory-img">
+            <div class="memory-date">Pretty Soul</div>
+            <div class="memory-caption">我愿意陪你吃毒药。但我不会撒谎，我真的很喜欢那寿司。🌸❤️</div>
+        </div>
+
         <div class="memory-card">
             <img src="./head.jpg" alt="hehehe my fav one " class="memory-img">
             <div class="memory-date">Pretty Soul</div>
             <div class="memory-caption">I love your height cause when we hug you can feel my heart more closely.🌸💖</div>
-        
+        </div>
 
         <div class="memory-card">
             <img src="./study.jpg" alt="Smart Princess " class="memory-img">
@@ -429,28 +393,30 @@
 
     <section class="final-message">
         <h2>Thank You for the Memories</h2>
-        <div class="poem-section" style="text-align: center; margin: 30px 0; line-height: 1.8; font-style: italic;">
-    <!-- Türkçe -->
-    <p style="color: #e91e63; font-weight: bold; margin-bottom: 5px;">🇹🇷</p>
-    <p style="margin-top: 0;">Gözlerinde buldum ömrün en güzel rengini,<br>
-    Kalbinde dindi ruhumun fırtınası, sükut erdi.<br>
-    Sen benim en güzel manzaram, en tatlı nefesim,<br>
-    İyi ki doğdun ruhumun diğer yarısı, iyi ki sevdin beni.</p>
+        
+        <div class="poem-section" style="text-align: center; margin: 30px auto; max-width: 650px; line-height: 1.8; font-style: italic; background: rgba(255,255,255,0.5); padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            <!-- Türkçe -->
+            <p style="color: #e91e63; font-weight: bold; margin-bottom: 5px;">🇹🇷</p>
+            <p style="margin-top: 0; margin-bottom: 15px;">Gözlerinde buldum ömrün en güzel rengini,<br>
+            Kalbinde dindi ruhumun fırtınası, sükut erdi.<br>
+            Sen benim en güzel manzaram, en tatlı nefesim,<br>
+            İyi ki doğdun ruhumun diğer yarısı, iyi ki sevdin beni.</p>
 
-    <!-- İngilizce -->
-    <p style="color: #e91e63; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">🇬🇧</p>
-    <p style="margin-top: 0;">In your eyes, I found the most beautiful color of life,<br>
-    In your heart, the storm of my soul found its eternal peace.<br>
-    You are my most beautiful view, my sweetest breath,<br>
-    Happy birthday to the other half of my soul, thank you for loving me.</p>
+            <!-- İngilizce -->
+            <p style="color: #e91e63; font-weight: bold; margin-bottom: 5px;">🇬🇧</p>
+            <p style="margin-top: 0; margin-bottom: 15px;">In your eyes, I found the most beautiful color of life,<br>
+            In your heart, the storm of my soul found its eternal peace.<br>
+            You are my most beautiful view, my sweetest breath,<br>
+            Happy birthday to the other half of my soul, thank you for loving me.</p>
 
-    <!-- Çince -->
-    <p style="color: #e91e63; font-weight: bold; margin-top: 20px; margin-bottom: 5px;">🇨🇳</p>
-    <p style="margin-top: 0;">在你的眼里，我发现了生命中最美的色彩，<br>
-    在你的心里，我灵魂的风暴找到了永恒的宁静。<br>
-    你是我最美丽的风景，是我最甜蜜 of 呼吸，<br>
-    祝我灵魂的另一半生日快乐，谢谢你如此爱我。</p>
-</div>
+            <!-- Çince -->
+            <p style="color: #e91e63; font-weight: bold; margin-bottom: 5px;">🇨🇳</p>
+            <p style="margin-top: 0;">在你的眼里，我发现了生命中最美的色彩，<br>
+            在你的心里，我灵魂的风暴找到了永恒的宁静。<br>
+            你是我最美丽的风景，是我最甜蜜的呼吸，<br>
+            祝我灵魂的另一半生日快乐，谢谢你如此爱我。</p>
+        </div>
+
         <p>Every laugh, every chat, and every moment we’ve shared has been truly special.💫<br>
             I’m so grateful for the bond we have, and for the positivity you always bring into my life.<br>
             On your birthday, I just wish for endless happiness, love, and success to come your way.🌸</p>
