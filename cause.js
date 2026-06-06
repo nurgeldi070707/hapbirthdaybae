@@ -4,12 +4,12 @@ const reasons = [
   {
     text: "Whenever I look into those beautiful eyes of yours, everything else just fades away. You have the most captivating gaze in the world. 👀❤️",
     emoji: "👀",
-    gif: "beautfleyes.jpg"
+    gif: "giphy.gif"
   },
   {
     text: "我们的寿司之夜总是令人难忘！我喜欢和你一起尝试新事物，在桌前对坐，分享彼此的世界。🍣✨",
     emoji: "🍣",
-    gif: "sushinight.jpg"
+    gif: "bob.gif"
   },
   {
     text: "When we hold each other's hands, I feel an incredible sense of safety. It feels like I can conquer the whole world as long as I'm holding your hand. 🤝💖",
@@ -19,7 +19,7 @@ const reasons = [
   {
     text: "和你一起在奇什米吉乌公园并肩散步，听着你的声音，是我一生中最平静美好的时光。🌳✨",
     emoji: "🌳",
-    gif: "cesmegiu.jpg"
+    gif: "gif2.gif"
   },
   {
     text: "Your beautiful smile makes everything around brighter, just like these lovely flowers. You are the prettiest bloom in my life. 🌸",
@@ -29,7 +29,7 @@ const reasons = [
   {
     text: "每当你看着我时，那害羞又可爱的样子，真的让我着迷。你总是能让我心动如初！🥰",
     emoji: "🥰",
-    gif: "shy.jpg"
+    gif: "gif1.gif"
   },
   {
     text: "Every single moment with you feels like we are living in our own perfect little world. We are the best team ever! 🎨💕",
